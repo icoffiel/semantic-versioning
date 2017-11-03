@@ -31,3 +31,9 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
+
+springBoot {
+    // Generate the build-info.properties file.
+    // Along with the actuator this allows the version to be determined at /info
+    buildInfo()
+}
